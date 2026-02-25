@@ -1,0 +1,15 @@
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+images
+api.js
