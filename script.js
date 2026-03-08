@@ -1,6 +1,6 @@
-import API_KEY from './api.js';
 
-const apiKey = API_KEY;
+
+const API_KEY = 'ea38f98766b7435893c62046262402';
 
 const searchBtn = document.getElementById('searchBtn');
 const cityInput = document.getElementById('cityInput');
@@ -48,7 +48,7 @@ async function fetchWeather(city) {
 
   try {
     const res = await fetch(
-      `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${city}`,
     );
     if (!res.ok) throw new Error('City not found');
 
